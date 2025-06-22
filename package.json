@@ -32,14 +32,14 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs"
     },
     "./cn": {
+      "types": "./dist/lib/cn.d.ts",
       "import": "./dist/lib/cn.js",
-      "require": "./dist/lib/cn.cjs",
-      "types": "./dist/lib/cn.d.ts"
+      "require": "./dist/lib/cn.cjs"
     }
   },
   "publishConfig": {

@@ -1,5 +1,8 @@
 # @shxlab/ui-utils
 
+[![npm version](https://img.shields.io/npm/v/@shxlab/ui-utils)](https://www.npmjs.com/package/@shxlab/ui-utils)
+[![license](https://img.shields.io/npm/l/@shxlab/ui-utils)](https://github.com/shxlab/ui-utils/blob/main/LICENSE)
+
 Tiny utility functions for UI development. Currently includes smart Tailwind CSS class merging.
 
 ## Installation
