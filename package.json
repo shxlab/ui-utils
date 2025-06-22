@@ -1,0 +1,66 @@
+{
+  "name": "@shxlab/ui-utils",
+  "version": "0.1.0",
+  "description": "Tiny utility functions for UI development: cn() for smart Tailwind CSS class merging and more",
+  "keywords": [
+    "tailwind",
+    "css",
+    "utility",
+    "clsx",
+    "tailwind-merge",
+    "ui",
+    "react",
+    "vue",
+    "svelte"
+  ],
+  "author": "shxlab",
+  "license": "MIT",
+  "homepage": "https://github.com/shxlab/ui-utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shxlab/ui-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shxlab/ui-utils/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./cn": {
+      "import": "./dist/lib/cn.js",
+      "require": "./dist/lib/cn.cjs",
+      "types": "./dist/lib/cn.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/** --dts --format esm,cjs",
+    "dev": "tsup src/** --dts --watch",
+    "prepublishOnly": "pnpm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
